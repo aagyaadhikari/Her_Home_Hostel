@@ -1,61 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Her Home Hostel</title>
-    <link rel="stylesheet" href="CSSFile/index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Her Home Hostel</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <div class="container">
     <!-- Header Section -->
     <header>
-        <div class="logo">
-            <img src="logo.png" alt="Her Home Hostel Logo">
+      <div class="logo">
+        <img src="picture/unnamed.png" alt="Her Home Hostel Logo">
+        <h1>Her Home Hostel</h1>
+      </div>
+      <nav>
+        <div> 
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+        <div class="dropdown">
+          <button class="dropbtn">Login</button>
+          <div class="dropdown-content">
+            <a href="#">Admin</a>
+            <a href="#">Staff</a>
+            <a href="#">Hosteler</a>
+          </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="Aboutus.html">About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Login</a></li>
-            </ul>
-        </nav>
+    </div>
+      </nav>
     </header>
+
+    <!-- Image Banner Section -->
+    <section class="banner">
+      <img src="picture/hostelroom.jpg" alt="Hostel Room">
+    </section>
 
     <!-- Welcome Section -->
     <section class="welcome-section">
-        <h1>Welcome!</h1>
-        <p>Empowering Futures, one dream at a time where strong, confident women build their careers and find home away from home.</p>
-        <div class="image-banner">
-            <img src="image1.jpg" alt="Hostel Room">
-            <img src="image2.jpg" alt="Hostel Residents">
-            <img src="image3.jpg" alt="Friendly Staff">
-        </div>
+      <div class="welcome-text">
+        <h2>Welcome!</h2>
+        <p>Empowering futures, one dream at a time where strong, confident women build their careers and find a home away from home.</p>
+      </div>
+      <div class="welcome-image">
+        <img src="picture/student.jpg" alt="Welcome Image">
+      </div>
     </section>
 
     <!-- Features Section -->
-    <section class="features-section">
-        <div class="feature">
-            <img src="best_rooms.jpg" alt="Best Rooms">
-            <p>Best Rooms</p>
-        </div>
-        <div class="feature">
-            <img src="healthy_meals.jpg" alt="Healthy Meals">
-            <p>Healthy Meals</p>
-        </div>
-        <div class="feature">
-            <img src="good_environment.jpg" alt="Good Environment">
-            <p>Good Environment</p>
-        </div>
+    <section class="features">
+      <div class="feature">
+        <img src="picture/room.jpg" alt="Best Rooms">
+        <h3>Best Rooms</h3>
+      </div>
+      <div class="feature">
+        <img src="picture/food.jpg" alt="Healthy Meals">
+        <h3>Healthy Meals</h3>
+      </div>
+      <div class="feature">
+        <img src="picture/goodenvironment.jpg" alt="Good Environment">
+        <h3>Good Environment</h3>
+      </div>
     </section>
 
     <!-- Footer Section -->
     <footer>
-        <p>Her Home Hostel</p>
-        <p>"Feel Like a Home"</p>
-        <button>Register Now</button>
+      <div class="footer-text">
+        <h2>Her Home Hostel</h2>
+        <p>Feel Like a Home</p>
+      </div>
+      <div class="register-button">
+        <a href="#">Register Now</a>
+      </div>
     </footer>
 
-    <script src="script.js"></script>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
