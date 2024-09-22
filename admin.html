@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Admin Dashboard</h1>
+            <nav>
+                <ul>
+                    <li><a href="admin/admin.html">Dashboard</a></li>
+                    <li><a href="#">Room Management</a></li>
+                    <li><a href="#">Staff</a></li>
+                    <li><a href="#">Hosteller</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="stats">
+            <div class="stat-box">
+                <h3>Total Staff</h3>
+                <div class="contact-image">
+                    <img src="picture/staff.jpg" alt="Hostel Room">
+                  </div>
+            </div>
+            <div class="stat-box">
+                <h3>Total Hosteller</h3>
+                <div class="contact-image">
+                    <img src="picture/girls.jpg" alt="Hostel Room">
+                  </div>
+            </div>
+            <div class="room-occupancy">
+                <h3>Bedroom Occupancy</h3>
+                <p>Single: 5 | Available: 2</p>
+                <p>Double: 8 | Available: 5</p>
+                <p>Triple: 10 | Available: 1</p>
+            </div>
+        </section>
+
+        <section class="charts">
+            <div class="chart-box">
+                <h3>Staff Distribution</h3>
+                <canvas id="pieChart"></canvas>
+            </div>
+            <div class="chart-box">
+                <h3>Occupancy Over Time</h3>
+                <canvas id="lineChart"></canvas>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

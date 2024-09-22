@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login as Admin</title>
+    <style>
+        body
+    
+        {
+        background-image: url(picture/hostelroom.jpg);
+        background-size: contain;
+        background-position:center;
+        background-repeat: no-repeat;
+        height: 10px;
+        font-family:Alegrey;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        height: 100vh; 
+        background-color: #965f3f; 
+        }
+
+        login-box
+        {
+        background: rgb(223, 210, 218); 
+        padding: 50px; 
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+        text-align: center;
+        width: 300px;
+     }
+        input
+         { 
+        width: 100%; 
+        padding: 10px; 
+        margin: 10px 0;
+        border-radius: 13px; 
+        border: 2px solid #ccc; 
+    }
+        button
+         { 
+        width: 105%;
+        padding: 10px;
+        background-color: #28a745; 
+        color: white; 
+        border: none;
+        border-radius: 13px; 
+        cursor: pointer;
+     }
+        button:hover
+    { 
+    background-color: #837e97; 
+}
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <h2>Admin Login</h2>
+        <form onsubmit="return validate()">
+            <input type="text" id="username" placeholder="Username or Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+            <p id="error" style="color:rgb(207, 51, 51); display:none;">Invalid input</p>
+        </form>
+    </div>
+
+    <script>
+        function validate() {
+            const user = document.getElementById('username').value;
+            const pass = document.getElementById('password').value;
+            if (user && pass.length >= 6) {
+                alert("Login successful!");
+                return true;
+            } else {
+                document.getElementById('error').style.display = 'block';
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>
