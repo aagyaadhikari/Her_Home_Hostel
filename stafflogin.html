@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Login</title>
+    <link rel="stylesheet" href="stafflogin.html">
+    <style>
+     body
+     {
+        background: url("picture/room.jpg") no-repeat center/cover;
+        display: flex; justify-content: center; 
+        align-items: center; 
+        height: 100vh;
+
+
+     }
+        .login
+     { 
+        text-align: center;
+        padding: 35px;
+        background: rgba(75, 73, 57, 0.6); 
+        border-radius: 10px;
+        width: 300px; 
+        color: rgb(255, 255, 255);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     }
+        img 
+    {
+        width: 80px; 
+        border-radius: 50%;
+     }
+        input 
+    {   width: 97%; 
+        padding: 10px; 
+        margin: 10px 0;
+        border-radius: 13px; 
+        border: 2px solid #aa7d7d; 
+    }
+        i
+        {
+        position: absolute; 
+        left: 10px; 
+        top: 40%; 
+        color: rgb(167, 93, 93);
+     }
+        button 
+    {  
+        width: 105%;
+        padding: 10px;
+        background-color: #28a745; 
+        color: white; 
+        border: none;
+        border-radius: 13px; 
+        cursor: pointer;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+        a 
+    { 
+       color: rgb(240, 233, 233);
+        text-decoration: none; 
+        
+    }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <img src="picture/staff.jpg">
+        <h3> Staff Login </h3>
+        <form>
+            <div><input type="text" placeholder="Username"><i class="fa fa-user"></i></div>
+            <div><input type="password" placeholder="Password"><i class="fa fa-lock"></i></div>
+            <button type="submit">Login</button>
+            <a href="#">Forgot Password?</a>
+            
+        </form>
+    </div>
+</body>
+</html>
